@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+}
+.container{
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    background-color: black;
+}
+header{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px;
+    padding: 10px;
+}
+#form{
+    display: flex;
+    align-items: center;
+}
+.field{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    padding: 30px;
+    border: 1px solid white;
+    margin-left: 10px;
+    border-radius: 0px;
+}
+
+.input-field{
+    display: flex;
+    width: calc(90% /3 );
+    flex-direction: column;
+}
+.input-field label{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    font-size: large;
+
+}
+.input-field input{
+    outline: none;
+    border: 1px solid white;
+    margin-top: 5px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+.add-btn{
+    margin-left: 50px;
+    height: 50px;
+    width: 100px;
+    align-items: center;
+    padding: 0px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.add-btn:hover{
+    background-color: rgb(255, 149, 0);
+}
+#table{
+    margin: 20px 10px;
+    width: 64%;
+}
+thead{
+    height: 40px;
+    background-color:white;
+    color: black;
+    border: 1px;
+}
+#table, tr, th, td{
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+
+}
+tbody{
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+td{
+    justify-content: center;
+    text-align: center;
+}
+#tbody tr{
+    height: 30px;
+    color: black;
+}
+.tfoot tr, td{
+        height: 40px;
+        background-color:white;
+        color: black;
+        border: 1px;
+}
+.row{
+    display: flex;
+    width: 64%;
+    justify-content: space-between;
+    margin: 10px;
+}
+.last-btn{
+    height: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 100px;
+}
+.last-btn:hover{
+    background-color: rgb(255, 149, 0);
+}
+.display-none{
+    display: none;
+}

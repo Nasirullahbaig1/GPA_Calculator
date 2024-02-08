@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>GPA Calculator</header>
+        <form id="form" action="#">
+            <div class="field">
+                <div class="input-field">
+                    <label for="#">Subject Name</label>
+                    <input id="subject-name" type="text" placeholder="subject name" required>
+                </div>
+                <div class="input-field">
+                    <label for="#">Credit Hours</label>
+                    <input id="cr-hr" type="number" placeholder="Credit hours" required min="1" max="20">
+                </div>
+                <div class="input-field">
+                    <label for="#">Obtained GPA</label>
+                    <input id="ob-gpa" type="number" placeholder="Obtained gpa" required min="0" max="4">
+                </div>
+            </div>
+            <div class="add">
+                <input type="button" class="add-btn" value="ADD" id="data-add">
+            </div>
+        </form>
+        <table id="table" class="display-none">
+            <thead>
+                <tr>
+                    <th>Subject Name</th>
+                    <th>Credit Hours</th>
+                    <th>Obtained GPA</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+            <tfoot id="tfoot">
+                
+            </tfoot>
+        </table>
+        <div id="ls-btn" class="row">
+            <div class="col">
+                <input type="button" id="calc-gpa" class="last-btn display-none" value="Calc-gpa">
+            </div>
+            <div class="col">
+                <input type="button" id="clear" class="last-btn display-none" value="Clear">
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
